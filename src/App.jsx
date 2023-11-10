@@ -28,9 +28,12 @@ const App = () => {
   return (
     <div className="bg-red-100">
       {weatherData ? (
-        <img
-          src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-        />
+        <div>  
+          <img
+            src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+          />
+          <h3>로딩 완료</h3>
+        </div>
       ) : (
         <div>로딩중...</div>
       )}
